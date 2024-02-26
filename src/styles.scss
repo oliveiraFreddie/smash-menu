@@ -1,1 +1,84 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f3f3;
+  font-family: "Poppins", sans-serif;
+}
+
+.menu {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px 0px;
+}
+
+header.app-header {
+  height: 100px;
+  display: flex;
+  padding-top: 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(3, 5, 23);
+  margin-bottom: 20px;
+}
+
+header.app-header img {
+  max-height: 100%; /* Ajuste a altura máxima da imagem */
+  max-width: 100%; /* Ajuste a largura máxima da imagem */
+}
+
+.food-items {
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+}
+
+.food-items img {
+  position: relative;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.details {
+  padding: 20px 10px;
+  display: grid;
+  grid-template-rows: auto 1fr 50px;
+  grid-row-gap: 15px;
+}
+
+.details-sub {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.details-sub > h5 {
+  font-weight: 600;
+  font-size: 18px;
+}
+.price {
+  text-align: right;
+  font-size: 1.2rem;
+}
+
+.details > p {
+  color: #6f6f6f;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 400;
+  align-self: stretch;
+}
+
+.footer {
+  padding: 10px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
